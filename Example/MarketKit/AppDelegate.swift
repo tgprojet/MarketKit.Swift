@@ -11,7 +11,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window?.rootViewController = MainController()
 
         Singleton.instance
-
+        Singleton.instance.kit
         return true
     }
 

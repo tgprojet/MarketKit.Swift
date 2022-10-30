@@ -57,15 +57,15 @@ extension CoinSyncer {
                 return
             }
 
-            guard let coinsPath = Kit.bundle?.path(forResource: "coins", ofType: "json") else {
-                return
-            }
-            guard let blockchainsPath = Kit.bundle?.path(forResource: "blockchains", ofType: "json") else {
-                return
-            }
-            guard let tokensPath = Kit.bundle?.path(forResource: "tokens", ofType: "json") else {
-                return
-            }
+           // guard let coinsPath = Kit.bundle?.path(forResource: "coins", ofType: "json") else {
+            //    return
+            //}
+            //guard let blockchainsPath = Kit.bundle?.path(forResource: "blockchains", ofType: "json") else {
+            //    return
+            //}
+            //guard let tokensPath = Kit.bundle?.path(forResource: "tokens", ofType: "json") else {
+           //     return
+           // }
 
             guard let coins = [Coin](JSONString: CoinSyncer.COINS_JSON) else {
                 return

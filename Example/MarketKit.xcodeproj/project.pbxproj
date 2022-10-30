@@ -20,8 +20,8 @@
 		11B35E55E915966936140508 /* MiscController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11B35D87E576923104A51AED /* MiscController.swift */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
+		76D776B846AE52A643BF85A8 /* libPods-MarketKitExample.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E449DBE20E37B37F76D021C1 /* libPods-MarketKitExample.a */; };
 		D3FD056E26CA351C0089C747 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D3FD056D26CA351C0089C747 /* LaunchScreen.storyboard */; };
-		EB8B405BCD994CFBEEF86F46 /* libPods-MarketKitExample.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E449DBE20E37B37F76D021C1 /* libPods-MarketKitExample.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -59,7 +59,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EB8B405BCD994CFBEEF86F46 /* libPods-MarketKitExample.a in Frameworks */,
+				76D776B846AE52A643BF85A8 /* libPods-MarketKitExample.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
