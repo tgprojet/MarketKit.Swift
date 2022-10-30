@@ -48,16 +48,21 @@ extension CoinSyncer {
 
     func initialSync() {
         do {
+            debugPrint("Before sync");
             if let versionString = try syncerStateStorage.value(key: keyInitialSyncVersion), let version = Int(versionString), currentVersion == version {
                 return
             }
-
+   debugPrint("Before coinsPath");
             guard let coinsPath = Bundle.module.url(forResource: "coins", withExtension: "json", subdirectory: "Dumps") else {
                 return
             }
+               debugPrint("Before blockchainsPath");
+
             guard let blockchainsPath = Bundle.module.url(forResource: "blockchains", withExtension: "json", subdirectory: "Dumps") else {
                 return
             }
+                           debugPrint("Before tokensPath");
+
             guard let tokensPath = Bundle.module.url(forResource: "tokens", withExtension: "json", subdirectory: "Dumps") else {
                 return
             }
@@ -102,7 +107,7 @@ extension CoinSyncer {
         var coinsOutdated = true
         var blockchainsOutdated = true
         var tokensOutdated = true
-
+     
         if let rawLastSyncTimestamp = try? syncerStateStorage.value(key: keyCoinsLastSyncTimestamp), let lastSyncTimestamp = Int(rawLastSyncTimestamp), coinsTimestamp == lastSyncTimestamp {
             coinsOutdated = false
         }
